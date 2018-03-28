@@ -13,8 +13,8 @@ const fixtures = path.join(__dirname, '__fixtures__')
 beforeEach(() => (hljs as any).mockClear())
 
 test('basic', createFixtureTest('basic'))
-
 test('does not highlight tags with \`nohighlight\` class', createFixtureTest('nohighlight'))
+test('appends hljs to existing class list', createFixtureTest('existingClass'))
 
 test('configures highlight.js with supplied configuration', async () => {
   const source = '<pre><code>// ambiguous</code></pre>'

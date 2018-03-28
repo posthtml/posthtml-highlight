@@ -17,7 +17,10 @@ export default function createHighlightPlugin(config: Options = {}) {
 }
 
 function highlightNode(node: any) {
-  if (node.attrs && node.attrs.class && node.attrs.class.indexOf('nohighlight') > -1) return node
+  if (!node.attrs) node.attrs = {}
+  if (!node.attrs.class) node.attrs.class = ''
+  if (node.attrs.class.indexOf('nohighlight') > -1) return node
+  node.attrs.class = (node.attrs.class + ' hljs').trimLeft()
   if (hasExplicitLanguage(node)) {
     const lang = getExplicitLanguage(node)
     node.content = hljs.highlight(lang, node.content[0]).value
@@ -28,11 +31,10 @@ function highlightNode(node: any) {
 }
 
 function hasExplicitLanguage(node: any) {
-  if (!node.attrs || !node.attrs.class) return
   const classes: string = node.attrs.class
   return classes.indexOf('language-') > -1 || classes.indexOf('lang-') > -1
 }
 
 function getExplicitLanguage(node: any) {
-  return node.attrs.class.match(/(?:lang|language)-(.*)/)[1]
+  return node.attrs.class.match(/(?:lang|language)-(\w*)/)[1]
 }

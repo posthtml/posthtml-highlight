@@ -22,7 +22,7 @@ Before:
 
 After:
 ``` html
-<pre><code>
+<pre><code class="hljs">
   <span class="hljs-keyword">const</span> foo = <span class="hljs-string">'foo'</span>
   console.<span class="hljs-built_in">log</span>(foo)
 </code></pre>
@@ -54,7 +54,7 @@ posthtml([
     /**
      * By default, only code tags wrapped in pre tags are highlighted (i.e. <pre><code><code/><pre/>)
      * 
-     * Use `inline: true` to highlight all code tags
+     * Set `inline: true` to highlight all code tags
      */
     inline: true,
 
