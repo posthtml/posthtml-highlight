@@ -1,5 +1,7 @@
 # PostHTML Highlight Plugin <img align="right" width="220" height="200" title="PostHTML logo" src="http://posthtml.github.io/posthtml/logo.svg">
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/caseyWebb/posthtml-highlight.svg)](https://greenkeeper.io/)
+
 [![Version][npm-version-shield]][npm]
 [![License][wtfpl-shield]][wtfpl]
 [![TypeScript][typescript-shield]][typescript]
