@@ -1,0 +1,74 @@
+{
+  "name": "posthtml-highlight",
+  "description": "PostHTML Syntax Highlighting Plugin",
+  "version": "1.0.0",
+  "license": "WTFPL",
+  "author": "Casey Webb (https://caseyWebb.xyz)",
+  "bugs": "https://github.com/caseyWebb/posthtml-highlight/issues",
+  "homepage": "https://github.com/caseyWebb/posthtml-highlight",
+  "repository": "caseyWebb/posthtml-highlight",
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "build": "tsc -p ./tsconfig.json",
+    "lint": "tslint -p ./tsconfig.json",
+    "test": "jest"
+  },
+  "dependencies": {
+    "highlight.js": "^9.12.0"
+  },
+  "peerDependencies": {
+    "posthtml": "^0.11.0"
+  },
+  "devDependencies": {
+    "@types/highlight.js": "^9.12.2",
+    "@types/jest": "^22.2.2",
+    "@types/node": "^9.6.0",
+    "jest": "^22.4.3",
+    "posthtml": "^0.11.3",
+    "ts-jest": "^22.4.2",
+    "tslint": "^5.9.1",
+    "typescript": "^2.8.1"
+  },
+  "keywords": [
+    "html",
+    "posthtml",
+    "posthtml-plugin",
+    "syntax",
+    "highlight",
+    "highlighter",
+    "highlighting",
+    "code"
+  ],
+  "main": "dist",
+  "files": [
+    "dist"
+  ],
+  "jest": {
+    "collectCoverage": true,
+    "coveragePathIgnorePatterns": [
+      "/dist/",
+      "/node_modules/"
+    ],
+    "coverageReporters": [
+      "lcov",
+      "html"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "ts"
+    ],
+    "roots": [
+      "src",
+      "test"
+    ],
+    "testMatch": [
+      "**/test/*.ts"
+    ],
+    "testURL": "http://localhost",
+    "transform": {
+      "^.+\\.[tj]sx?$": "ts-jest"
+    }
+  }
+}
