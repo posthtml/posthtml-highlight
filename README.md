@@ -94,8 +94,8 @@ Add the `nohighlight` class as per [highlight.js's usage docs][]
 [npm-stats]: http://npm-stat.com/charts.html?package=posthtml-highlight&author=&from=&to=
 [npm-stats-shield]: https://img.shields.io/npm/dt/posthtml-highlight.svg?maxAge=2592000
 
-[david-dm]: https://david-dm.org/posthtml/posthtml-highlight
-[david-dm-shield]: https://david-dm.org/posthtml/posthtml-highlight.svg
+[david-dm]: https://david-dm.org/caseyWebb/posthtml-highlight
+[david-dm-shield]: https://david-dm.org/caseyWebb/posthtml-highlight.svg
 
 [typescript]: https://www.typescriptlang.org/
 [typescript-shield]: https://img.shields.io/badge/definitions-TypeScript-blue.svg
