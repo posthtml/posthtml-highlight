@@ -78,7 +78,7 @@ c) download via the [highlight.js repo](https://github.com/isagalaev/highlight.j
 
 ### Specifying a language
 
-Specifying a language as per [highlight.js's usage docs][] is supported, but you must use the `lang-*` or `language-*` prefix.
+Specifying a language as per [highlight.js's usage docs][] is supported, with the caveat that you must use the `lang-*` or `language-*` prefix
 
 ### Skip highlighting on a node
 
