@@ -20,7 +20,7 @@ function highlightNode(node: any) {
   if (!node.attrs) node.attrs = {}
   if (!node.attrs.class) node.attrs.class = ''
   if (node.attrs.class.indexOf('nohighlight') > -1) return node
-  node.attrs.class = (node.attrs.class + ' hljs').trimLeft()
+  node.attrs.class = (node.attrs.class as string + ' hljs').trimLeft()
   if (hasExplicitLanguage(node)) {
     const lang = getExplicitLanguage(node)
     node.content = hljs.highlight(lang, node.content[0]).value
