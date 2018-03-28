@@ -88,11 +88,11 @@ Add the `nohighlight` class as per [highlight.js's usage docs][]
 
 [highlight.js's usage docs]: https://highlightjs.org/usage/
 
-[npm]: https://www.npmjs.com/package/caseyWebb/posthtml-highlight
-[npm-version-shield]: https://img.shields.io/npm/v/caseyWebb/posthtml-highlight.svg
+[npm]: https://www.npmjs.com/package/posthtml-highlight
+[npm-version-shield]: https://img.shields.io/npm/v/posthtml-highlight.svg
 
-[npm-stats]: http://npm-stat.com/charts.html?package=caseyWebb/posthtml-highlight&author=&from=&to=
-[npm-stats-shield]: https://img.shields.io/npm/dt/caseyWebb/posthtml-highlight.svg?maxAge=2592000
+[npm-stats]: http://npm-stat.com/charts.html?package=posthtml-highlight&author=&from=&to=
+[npm-stats-shield]: https://img.shields.io/npm/dt/posthtml-highlight.svg?maxAge=2592000
 
 [david-dm]: https://david-dm.org/posthtml/posthtml-highlight
 [david-dm-shield]: https://david-dm.org/posthtml/posthtml-highlight.svg
@@ -107,7 +107,7 @@ Add the `nohighlight` class as per [highlight.js's usage docs][]
 [codecov-shield]: https://img.shields.io/codecov/c/github/caseyWebb/posthtml-highlight.svg
 
 [gitter]: https://badges.gitter.im/posthtml/posthtml.svg
-[gitter-shield]: https://gitter.im/posthtml/posthtml?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge"
+[gitter-shield]: https://gitter.im/posthtml/posthtml
 
 [wtfpl]: ./LICENSE.md
-[wtfpl-shield]: https://img.shields.io/npm/l/caseyWebb/posthtml-highlight.svg
+[wtfpl-shield]: https://img.shields.io/npm/l/posthtml-highlight.svg
