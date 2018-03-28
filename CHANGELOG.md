@@ -1,3 +1,8 @@
+## 1.0.2 (Mar 28, 2018)
+
+- Fixed: Add `hljs` class to container element
+- Internal: Add npm lifecycle hooks to prevent oopsies
+
 ## 1.0.1 (Mar 27, 2018)
 
 - Fixed: README
