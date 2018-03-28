@@ -106,8 +106,8 @@ Add the `nohighlight` class as per [highlight.js's usage docs][]
 [codecov]: https://codecov.io/gh/caseyWebb/posthtml-highlight
 [codecov-shield]: https://img.shields.io/codecov/c/github/caseyWebb/posthtml-highlight.svg
 
-[gitter]: https://badges.gitter.im/posthtml/posthtml.svg
-[gitter-shield]: https://gitter.im/posthtml/posthtml
+[gitter]: https://gitter.im/posthtml/posthtml
+[gitter-shield]: https://badges.gitter.im/posthtml/posthtml.svg
 
 [wtfpl]: ./LICENSE.md
 [wtfpl-shield]: https://img.shields.io/npm/l/posthtml-highlight.svg
