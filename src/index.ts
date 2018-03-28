@@ -7,7 +7,7 @@ export type Options = hljs.IOptions & {
 export default function createHighlightPlugin(config: Options = {}) {
   return function highlightPlugin(tree: any) {
     const highlightCodeTags = (node: any) => tree.match.call(node, { tag: 'code' }, highlightNode)
-    if (config) hljs.configure(config)
+    hljs.configure(config)
     if (config.inline) {
       highlightCodeTags(tree)
     } else {
