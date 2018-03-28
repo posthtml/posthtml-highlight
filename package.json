@@ -1,14 +1,14 @@
 {
   "name": "posthtml-highlight",
   "description": "PostHTML Syntax Highlighting Plugin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "WTFPL",
   "author": "Casey Webb (https://caseyWebb.xyz)",
   "bugs": "https://github.com/caseyWebb/posthtml-highlight/issues",
   "homepage": "https://github.com/caseyWebb/posthtml-highlight",
   "repository": "caseyWebb/posthtml-highlight",
   "engines": {
-    "node": ">=4"
+    "node": ">=6"
   },
   "scripts": {
     "build": "tsc -p ./tsconfig.json",
