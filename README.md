@@ -1,13 +1,12 @@
 # PostHTML Highlight Plugin <img align="right" width="220" height="200" title="PostHTML logo" src="http://posthtml.github.io/posthtml/logo.svg">
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/caseyWebb/posthtml-highlight.svg)](https://greenkeeper.io/)
-
 [![Version][npm-version-shield]][npm]
 [![License][wtfpl-shield]][wtfpl]
 [![TypeScript][typescript-shield]][typescript]
 [![Build][travis-ci-shield]][travis-ci]
 [![Coverage][codecov-shield]][codecov]
 [![Dependency Status][david-dm-shield]][david-dm]
+[![Greenkeeper][greenkeeper-shield]][greenkeeper]
 [![Downloads][npm-stats-shield]][npm-stats]
 [![Chat][gitter-shield]][gitter]
 
@@ -107,6 +106,9 @@ Add the `nohighlight` class as per [highlight.js's usage docs][]
 
 [codecov]: https://codecov.io/gh/caseyWebb/posthtml-highlight
 [codecov-shield]: https://img.shields.io/codecov/c/github/caseyWebb/posthtml-highlight.svg
+
+[greenkeeper]: https://greenkeeper.io/
+[greenkeeper-shield]: https://badges.greenkeeper.io/caseyWebb/posthtml-highlight.svg
 
 [gitter]: https://gitter.im/posthtml/posthtml
 [gitter-shield]: https://badges.gitter.im/posthtml/posthtml.svg
