@@ -18,9 +18,7 @@ cache:
 before_script:
 - npx -p greenkeeper-lockfile@1 greenkeeper-lockfile-update
 script:
-- yarn build
-- yarn lint
-- yarn test
+- yarn ci
 after_script:
 - npx codecov
 - npx -p greenkeeper-lockfile@1 greenkeeper-lockfile-upload
