@@ -27,7 +27,7 @@
   "devDependencies": {
     "@types/highlight.js": "^9.12.2",
     "@types/jest": "^22.2.2",
-    "@types/node": "^9.6.0",
+    "@types/node": "^10.0.3",
     "husky": "^0.14.3",
     "jest": "^22.4.3",
     "posthtml": "^0.11.3",
