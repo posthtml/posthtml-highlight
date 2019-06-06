@@ -95,20 +95,20 @@ Add the `nohighlight` class as per [highlight.js's usage docs][]
 [npm-stats]: http://npm-stat.com/charts.html?package=posthtml-highlight&author=&from=&to=
 [npm-stats-shield]: https://img.shields.io/npm/dt/posthtml-highlight.svg?maxAge=2592000
 
-[david-dm]: https://david-dm.org/caseyWebb/posthtml-highlight
-[david-dm-shield]: https://david-dm.org/caseyWebb/posthtml-highlight.svg
+[david-dm]: https://david-dm.org/posthtml/posthtml-highlight
+[david-dm-shield]: https://david-dm.org/posthtml/posthtml-highlight.svg
 
 [typescript]: https://www.typescriptlang.org/
 [typescript-shield]: https://img.shields.io/badge/definitions-TypeScript-blue.svg
 
-[travis-ci]: https://travis-ci.org/caseyWebb/posthtml-highlight/
-[travis-ci-shield]: https://img.shields.io/travis/caseyWebb/posthtml-highlight/master.svg
+[travis-ci]: https://travis-ci.org/posthtml/posthtml-highlight/
+[travis-ci-shield]: https://img.shields.io/travis/posthtml/posthtml-highlight/master.svg
 
-[codecov]: https://codecov.io/gh/caseyWebb/posthtml-highlight
-[codecov-shield]: https://img.shields.io/codecov/c/github/caseyWebb/posthtml-highlight.svg
+[codecov]: https://codecov.io/gh/posthtml/posthtml-highlight
+[codecov-shield]: https://img.shields.io/codecov/c/github/posthtml/posthtml-highlight.svg
 
 [greenkeeper]: https://greenkeeper.io/
-[greenkeeper-shield]: https://badges.greenkeeper.io/caseyWebb/posthtml-highlight.svg
+[greenkeeper-shield]: https://badges.greenkeeper.io/posthtml/posthtml-highlight.svg
 
 [gitter]: https://gitter.im/posthtml/posthtml
 [gitter-shield]: https://badges.gitter.im/posthtml/posthtml.svg
