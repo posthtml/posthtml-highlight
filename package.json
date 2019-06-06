@@ -4,9 +4,9 @@
   "version": "1.0.3",
   "license": "WTFPL",
   "author": "Casey Webb (https://caseyWebb.xyz)",
-  "bugs": "https://github.com/caseyWebb/posthtml-highlight/issues",
-  "homepage": "https://github.com/caseyWebb/posthtml-highlight",
-  "repository": "caseyWebb/posthtml-highlight",
+  "bugs": "https://github.com/posthtml/posthtml-highlight/issues",
+  "homepage": "https://github.com/posthtml/posthtml-highlight",
+  "repository": "posthtml/posthtml-highlight",
   "engines": {
     "node": ">=6"
   },
