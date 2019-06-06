@@ -18,7 +18,7 @@
     "prepack": "yarn ci"
   },
   "dependencies": {
-    "highlight.js": "^9.12.0"
+    "highlight.js": "^9.15.0"
   },
   "peerDependencies": {
     "posthtml": "^0.11.0"
