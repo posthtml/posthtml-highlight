@@ -14,6 +14,7 @@
     "build": "tsc",
     "format": "pretty-quick",
     "lint": "eslint --ext .ts --ignore-path .gitignore ./",
+    "release": "standard-version --sign && git push --follow-tags",
     "test": "jest"
   },
   "keywords": [
@@ -104,6 +105,7 @@
     "jest": "^24.8.0",
     "posthtml": "^0.11.4",
     "prettier": "^1.18.2",
+    "standard-version": "^7.0.0",
     "ts-jest": "^24.0.2",
     "typescript": "^3.5.1"
   },
