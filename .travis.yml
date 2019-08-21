@@ -9,8 +9,7 @@ env:
   global:
 branches:
   only:
-  - master
-  - /^greenkeeper/.*$/
+    - master
 cache:
   yarn: true
   directories:
