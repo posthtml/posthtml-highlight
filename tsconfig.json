@@ -6,10 +6,8 @@
     "outDir": "./dist",
     "strict": true,
     "moduleResolution": "node",
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "typeRoots": ["@types", "node_modules/@types"]
   },
-  "exclude": [
-    "dist",
-    "test"
-  ]
+  "exclude": ["dist", "test"]
 }
