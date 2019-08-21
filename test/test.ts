@@ -13,7 +13,11 @@ const fixtures = path.join(__dirname, '__fixtures__')
 beforeEach(() => (hljs as any).mockClear())
 
 test('basic', createFixtureTest('basic'))
-test('does not highlight tags with \`nohighlight\` class', createFixtureTest('nohighlight'))
+test('nested', createFixtureTest('nested'))
+test(
+  'does not highlight tags with `nohighlight` class',
+  createFixtureTest('nohighlight')
+)
 test('appends hljs to existing class list', createFixtureTest('existingClass'))
 
 test('configures highlight.js with supplied configuration', async () => {
@@ -35,8 +39,9 @@ test('only highlights inline code blocks if options.inline', async () => {
 })
 
 test('uses with language specified via language-*', async () => {
-  const source = '<pre><code class="language-javascript">// ambiguous</code></pre>'
- 
+  const source =
+    '<pre><code class="language-javascript">// ambiguous</code></pre>'
+
   await posthtml([plugin()]).process(source)
 
   expect(hljs.highlight).lastCalledWith('javascript', '// ambiguous')
@@ -44,7 +49,7 @@ test('uses with language specified via language-*', async () => {
 
 test('uses with language specified via lang-*', async () => {
   const source = '<pre><code class="lang-typescript">// ambiguous</code></pre>'
-  
+
   await posthtml([plugin()]).process(source)
 
   expect(hljs.highlight).lastCalledWith('typescript', '// ambiguous')
@@ -53,14 +58,11 @@ test('uses with language specified via lang-*', async () => {
 function createFixtureTest(name: string) {
   return async () => {
     const source = await readFile(path.join(fixtures, `${name}.html`), 'utf8')
-    const [
-      expected,
-      { html: actual }
-    ] = await Promise.all([
+    const [expected, { html: actual }] = await Promise.all([
       readFile(path.join(fixtures, `${name}.expected.html`), 'utf8'),
       posthtml([plugin()]).process(source)
     ])
-    
+
     expect(actual).toBe(expected)
   }
 }
