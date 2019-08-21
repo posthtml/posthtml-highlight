@@ -1,4 +1,3 @@
-
 language: node_js
 node_js:
   - stable
@@ -13,10 +12,10 @@ branches:
 cache:
   yarn: true
   directories:
-  - node_modules
+    - node_modules
 script:
-- yarn ci
+  - yarn ci
 after_script:
-- npx codecov
+  - npx codecov
 notifications:
   email: false

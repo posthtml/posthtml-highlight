@@ -11,28 +11,10 @@
     "node": ">=6"
   },
   "scripts": {
-    "build": "tsc -p ./tsconfig.json",
-    "lint": "tslint -p ./tsconfig.json",
-    "test": "jest",
-    "ci": "yarn build && yarn lint && yarn test",
-    "prepack": "yarn ci"
-  },
-  "dependencies": {
-    "highlight.js": "^9.15.0"
-  },
-  "peerDependencies": {
-    "posthtml": "^0.11.0"
-  },
-  "devDependencies": {
-    "@types/highlight.js": "^9.12.3",
-    "@types/jest": "^24.0.13",
-    "@types/node": "^12.0.6",
-    "husky": "^3.0.4",
-    "jest": "^24.8.0",
-    "posthtml": "^0.11.4",
-    "ts-jest": "^24.0.2",
-    "tslint": "^5.17.0",
-    "typescript": "^3.5.1"
+    "build": "tsc",
+    "format": "pretty-quick",
+    "lint": "eslint --ext .ts --ignore-path .gitignore ./",
+    "test": "jest"
   },
   "keywords": [
     "html",
@@ -48,6 +30,27 @@
   "files": [
     "dist"
   ],
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "eslintConfig": {
+    "extends": "profiscience",
+    "rules": {
+      "@typescript-eslint/no-use-before-define": [
+        "error",
+        {
+          "functions": false
+        }
+      ]
+    }
+  },
   "jest": {
     "collectCoverage": true,
     "coveragePathIgnorePatterns": [
@@ -76,7 +79,38 @@
   },
   "husky": {
     "hooks": {
-      "pre-push": "yarn lint"
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "yarn format --staged"
     }
+  },
+  "prettier": {
+    "arrowParens": "always",
+    "semi": false,
+    "singleQuote": true
+  },
+  "dependencies": {
+    "highlight.js": "^9.15.0"
+  },
+  "peerDependencies": {
+    "posthtml": "^0.11.0"
+  },
+  "devDependencies": {
+    "@types/highlight.js": "^9.12.3",
+    "@types/jest": "^24.0.13",
+    "@types/node": "^12.0.6",
+    "eslint": "^6.2.1",
+    "eslint-config-profiscience": "^4.0.8",
+    "husky": "^3.0.4",
+    "jest": "^24.8.0",
+    "posthtml": "^0.11.4",
+    "prettier": "^1.18.2",
+    "ts-jest": "^24.0.2",
+    "typescript": "^3.5.1"
+  },
+  "optionalDependencies": {
+    "@commitlint/cli": "^8.1.0",
+    "@commitlint/config-conventional": "^8.1.0",
+    "cz-conventional-changelog": "^3.0.2",
+    "pretty-quick": "^1.11.1"
   }
 }
