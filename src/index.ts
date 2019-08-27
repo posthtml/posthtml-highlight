@@ -24,7 +24,7 @@ function highlightNode(
 ): PostHTMLAbstractSyntaxTree {
   const attrs = node.attrs || {}
   const classList = `${attrs.class || ''} hljs`.trimLeft()
-  if (classList.indexOf('nohighlight') > -1) return node
+  if (classList.includes('nohighlight')) return node
   const lang = getExplicitLanguage(classList)
   attrs.class = classList
   node.attrs = attrs
@@ -35,7 +35,7 @@ function highlightNode(
 }
 
 function getExplicitLanguage(classList: string): string | undefined {
-  const matches = classList.match(/(?:lang|language)-(\w*)/)
+  const matches = /(?:lang|language)-(\w*)/.exec(classList)
   return matches === null ? void 0 : matches[1]
 }
 
