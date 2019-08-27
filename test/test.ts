@@ -2,6 +2,8 @@ import * as fs from 'fs'
 import * as path from 'path'
 import { promisify } from 'util'
 import * as hljs from 'highlight.js'
+
+// eslint-disable-next-line @typescript-eslint/ban-ts-ignore
 // @ts-ignore
 import posthtml from 'posthtml'
 
@@ -10,7 +12,7 @@ import plugin from '../src'
 const readFile = promisify(fs.readFile)
 const fixtures = path.join(__dirname, '__fixtures__')
 
-beforeEach(() => (hljs as any).mockClear())
+beforeEach(() => ((hljs as unknown) as jest.Mock).mockClear())
 
 test('basic', createFixtureTest('basic'))
 test('nested', createFixtureTest('nested'))
