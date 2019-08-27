@@ -44,7 +44,10 @@
   "eslintConfig": {
     "extends": "profiscience",
     "parserOptions": {
-      "project": "./tsconfig.json"
+      "project": [
+        "./tsconfig.json",
+        "./test/tsconfig.json"
+      ]
     },
     "rules": {
       "@typescript-eslint/no-use-before-define": [
