@@ -1,15 +1,23 @@
 import * as hljs from 'highlight.js'
 
+import {
+  PostHTMLNode,
+  PostHTMLPlugin,
+  PostHTMLNodeContent,
+  PostHTMLNodeCallback
+} from 'posthtml'
+
 export type Options = hljs.IOptions & {
   inline?: boolean
 }
 
 export default function createHighlightPlugin(
   config: Options = {}
-): (tree: PostHTMLAbstractSyntaxTree) => void {
-  return function highlightPlugin(tree: PostHTMLAbstractSyntaxTree): void {
-    const highlightCodeTags = (node: PostHTMLAbstractSyntaxTree): void =>
+): PostHTMLPlugin<void> {
+  return function highlightPlugin(tree) {
+    const highlightCodeTags: PostHTMLNodeCallback = (node) =>
       tree.match.call(node, { tag: 'code' }, highlightNode)
+
     hljs.configure(config)
     if (config.inline) {
       highlightCodeTags(tree)
@@ -19,18 +27,18 @@ export default function createHighlightPlugin(
   }
 }
 
-function highlightNode(
-  node: PostHTMLAbstractSyntaxTree
-): PostHTMLAbstractSyntaxTree {
+function highlightNode(node: PostHTMLNode): PostHTMLNode {
   const attrs = node.attrs || {}
   const classList = `${attrs.class || ''} hljs`.trimLeft()
   if (classList.includes('nohighlight')) return node
   const lang = getExplicitLanguage(classList)
   attrs.class = classList
   node.attrs = attrs
-  node.content = node.content.map((c): string | PostHTMLAbstractSyntaxTree =>
-    mapContentOrNode(c, lang)
-  )
+  if (node.content) {
+    node.content = node.content.map((c) =>
+      mapContentOrNode(c, lang)
+    )
+  }
   return node
 }
 
@@ -40,9 +48,9 @@ function getExplicitLanguage(classList: string): string | undefined {
 }
 
 function mapContentOrNode(
-  contentOrNode: string | PostHTMLAbstractSyntaxTree,
+  contentOrNode: string | PostHTMLNode,
   lang?: string
-): string | PostHTMLAbstractSyntaxTree {
+): PostHTMLNodeContent {
   if (typeof contentOrNode === 'string') {
     if (lang) {
       return hljs.highlight(lang, contentOrNode).value
