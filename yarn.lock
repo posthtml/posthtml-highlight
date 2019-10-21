@@ -563,7 +563,7 @@
     "@typescript-eslint/typescript-estree" "2.5.0"
     eslint-scope "^5.0.0"
 
-"@typescript-eslint/parser@^2.4.0":
+"@typescript-eslint/parser@^2.5.0":
   version "2.5.0"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/parser/-/parser-2.5.0.tgz#858030ddd808fbbe88e03f42e5971efaccb8218a"
   integrity sha512-9UBMiAwIDWSl79UyogaBdj3hidzv6exjKUx60OuZuFnJf56tq/UMpdPcX09YmGqE8f4AnAueYtBxV8IcAT3jdQ==
@@ -1780,12 +1780,12 @@ eslint-config-prettier@^6.4.0:
     get-stdin "^6.0.0"
 
 eslint-config-profiscience@^4.0.8:
-  version "4.1.8"
-  resolved "https://registry.yarnpkg.com/eslint-config-profiscience/-/eslint-config-profiscience-4.1.8.tgz#c3b9904a991dba59a2c69cd924f88471916094d6"
-  integrity sha512-CwdemS9BDmZiiYxSXp2x0tIlp8CfCV2fE0Vegzx2b4GjdZvn6+Py0mDgj2bYkqmfOwDlc16JPjbesfPrauRaMw==
+  version "4.1.10"
+  resolved "https://registry.yarnpkg.com/eslint-config-profiscience/-/eslint-config-profiscience-4.1.10.tgz#0d37b08853c43d412d85af8f08c9d665ebd84d17"
+  integrity sha512-plK1wVrmgnwEI7esxL65u0Q40l4nSTH886GMqoqfK+KkZVij/jI+WRJJ8QGWYDctJDoIS/R23KuPFdtJl5JCUA==
   dependencies:
     "@typescript-eslint/eslint-plugin" "^2.5.0"
-    "@typescript-eslint/parser" "^2.4.0"
+    "@typescript-eslint/parser" "^2.5.0"
     eslint-config-prettier "^6.4.0"
 
 eslint-scope@^5.0.0:
