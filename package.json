@@ -111,12 +111,12 @@
     "eslint": "^6.2.1",
     "eslint-config-profiscience": "^4.0.8",
     "husky": "^4.0.0",
-    "jest": "^24.8.0",
+    "jest": "^25.1.0",
     "posthtml": "^0.12.0",
     "prettier": "^1.18.2",
     "pretty-quick": "^2.0.0",
     "standard-version": "^7.0.0",
-    "ts-jest": "^24.0.2",
+    "ts-jest": "^25.0.0",
     "typescript": "^3.5.1"
   }
 }
