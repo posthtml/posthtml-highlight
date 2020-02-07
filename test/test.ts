@@ -1,6 +1,7 @@
 import * as fs from 'fs'
 import * as path from 'path'
 import { promisify } from 'util'
+
 import * as hljs from 'highlight.js'
 
 // eslint-disable-next-line @typescript-eslint/ban-ts-ignore
