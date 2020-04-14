@@ -4614,25 +4614,25 @@ posix-character-classes@^0.1.0:
   resolved "https://registry.yarnpkg.com/posix-character-classes/-/posix-character-classes-0.1.1.tgz#01eac0fe3b5af71a2a6c02feabb8c1fef7e00eab"
   integrity sha1-AerA/jta9xoqbAL+q7jB/vfgDqs=
 
-posthtml-parser@^0.4.1:
+posthtml-parser@^0.4.2:
   version "0.4.2"
   resolved "https://registry.yarnpkg.com/posthtml-parser/-/posthtml-parser-0.4.2.tgz#a132bbdf0cd4bc199d34f322f5c1599385d7c6c1"
   integrity sha512-BUIorsYJTvS9UhXxPTzupIztOMVNPa/HtAm9KHni9z6qEfiJ1bpOBL5DfUOL9XAc3XkLIEzBzpph+Zbm4AdRAg==
   dependencies:
     htmlparser2 "^3.9.2"
 
-posthtml-render@^1.1.5:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/posthtml-render/-/posthtml-render-1.2.0.tgz#3df0c800a8bbb95af583a94748520469477addf4"
-  integrity sha512-dQB+hoAKDtnI94RZm/wxBUH9My8OJcXd0uhWmGh2c7tVtQ85A+OS3yCN3LNbFtPz3bViwBJXAeoi+CBGMXM0DA==
+posthtml-render@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/posthtml-render/-/posthtml-render-1.2.1.tgz#38a808522cdbc357bb5a479d63a972913cd9d8fe"
+  integrity sha512-5FU96lBesmRwczhmdR9p3ZgK0xJtpSSXbjabowHr26adCLB7tZVhOV31k48xjALeAKRcexvczkNdl+Wn7FRjeQ==
 
 posthtml@^0.12.0:
-  version "0.12.0"
-  resolved "https://registry.yarnpkg.com/posthtml/-/posthtml-0.12.0.tgz#6e2a2fcd774eaed1a419a95c5cc3a92b676a40a6"
-  integrity sha512-aNUEP/SfKUXAt+ghG51LC5MmafChBZeslVe/SSdfKIgLGUVRE68mrMF4V8XbH07ZifM91tCSuxY3eHIFLlecQw==
+  version "0.12.1"
+  resolved "https://registry.yarnpkg.com/posthtml/-/posthtml-0.12.1.tgz#847fae572b3ccb6a2a72ffc7aa72d1e41e18b2dc"
+  integrity sha512-uP+fqiowLFQaZ9WooFpsm56+lu6enrMPPIl3rNuQsmJlFGAFvA2mtGDu1NyZCEOYMGxZiWWzGK+Vosp9VIBouQ==
   dependencies:
-    posthtml-parser "^0.4.1"
-    posthtml-render "^1.1.5"
+    posthtml-parser "^0.4.2"
+    posthtml-render "^1.2.1"
 
 prelude-ls@~1.1.2:
   version "1.1.2"
