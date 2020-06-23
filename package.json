@@ -102,7 +102,7 @@
     "posthtml": "^0.13.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^8.1.0",
+    "@commitlint/cli": "^9.0.1",
     "@commitlint/config-conventional": "^8.1.0",
     "@types/highlight.js": "^9.12.3",
     "@types/jest": "^26.0.0",
