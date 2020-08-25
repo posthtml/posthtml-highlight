@@ -2,18 +2,6 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-## [2.0.0](https://github.com/posthtml/posthtml-highlight/compare/v1.1.1...v2.0.0) (2020-08-23)
-
-### ⚠ BREAKING CHANGES
-
-- Drop support for Node v8
-
-### Bug Fixes
-
-- types after update pkg ([2a25676](https://github.com/posthtml/posthtml-highlight/commit/2a25676daa2700f67390cbfdeaed6a4e97ff27d3))
-
-* drop (explicit) support for Node v8 ([a093dc1](https://github.com/posthtml/posthtml-highlight/commit/a093dc13ee12450bccbb7ad7d4d5956282d825df))
-
 ### [1.1.1](https://github.com/posthtml/posthtml-highlight/compare/v1.1.0...v1.1.1) (2019-08-30)
 
 ## [1.1.0](https://github.com/posthtml/posthtml-highlight/compare/v1.0.3...v1.1.0) (2019-08-21)
