@@ -4717,10 +4717,10 @@ posthtml-render@^1.2.3:
   resolved "https://registry.yarnpkg.com/posthtml-render/-/posthtml-render-1.2.3.tgz#da1cf7ba4efb42cfe9c077f4f41669745de99b6d"
   integrity sha512-rGGayND//VwTlsYKNqdILsA7U/XP0WJa6SMcdAEoqc2WRM5QExplGg/h9qbTuHz7mc2PvaXU+6iNxItvr5aHMg==
 
-posthtml@^0.14.0:
-  version "0.14.0"
-  resolved "https://registry.yarnpkg.com/posthtml/-/posthtml-0.14.0.tgz#718603bd484e94a57c64ffcccfa8dac4c560081d"
-  integrity sha512-OvMSnQWKJXQKm+q33LP6LVNU3EPwQ1ZA1xCUgde/jpAX7dTWHgQrtFPvkLMLbUlqUS1ouRHicHR5JHVB7MuQtQ==
+posthtml@^0.15.0:
+  version "0.15.0"
+  resolved "https://registry.yarnpkg.com/posthtml/-/posthtml-0.15.0.tgz#1b783abe2899b7796d2dbec98c45dfe069213370"
+  integrity sha512-3M2OHOuyiE5hiEJLo070KWsnMnDgxQuaLexWMekA7/ikz0vC799OqXlUMlFYIrp6krz3zgQfNqSyzg9SvdOm9A==
   dependencies:
     posthtml-parser "^0.6.0"
     posthtml-render "^1.2.3"
