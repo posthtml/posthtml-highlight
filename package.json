@@ -99,7 +99,7 @@
     "highlight.js": "^10.0.0"
   },
   "peerDependencies": {
-    "posthtml": "^0.15.1"
+    "posthtml": "^0.16.2"
   },
   "devDependencies": {
     "@commitlint/cli": "^12.0.0",
@@ -112,7 +112,7 @@
     "eslint-config-profiscience": "^5.0.2",
     "husky": "^6.0.0",
     "jest": "^26.4.0",
-    "posthtml": "^0.15.1",
+    "posthtml": "^0.16.2",
     "prettier": "^2.0.1",
     "pretty-quick": "^3.0.0",
     "standard-version": "^9.0.0",
