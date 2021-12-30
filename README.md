@@ -98,7 +98,7 @@ Add the `nohighlight` class as per [highlight.js's usage docs][]
 [typescript]: https://www.typescriptlang.org/
 [typescript-shield]: https://img.shields.io/badge/definitions-TypeScript-blue.svg
 [build-status]: https://github.com/posthtml/posthtml-highlight/actions/workflows/nodejs.yml
-[build-status-badge]: https://github.com/posthtml/posthtml-highlight/actions/workflows/nodejs.yml/badge.svg
+[build-status-shield]: https://github.com/posthtml/posthtml-highlight/actions/workflows/nodejs.yml/badge.svg
 [codecov]: https://codecov.io/gh/posthtml/posthtml-highlight
 [codecov-shield]: https://img.shields.io/codecov/c/github/posthtml/posthtml-highlight.svg
 [gitter]: https://gitter.im/posthtml/posthtml
