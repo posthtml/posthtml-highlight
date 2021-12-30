@@ -4,7 +4,7 @@ import { promisify } from 'util'
 
 import * as hljs from 'highlight.js'
 
-// eslint-disable-next-line @typescript-eslint/ban-ts-ignore
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 import posthtml from 'posthtml'
 
@@ -13,7 +13,7 @@ import plugin from '../src'
 const readFile = promisify(fs.readFile)
 const fixtures = path.join(__dirname, '__fixtures__')
 
-beforeEach(() => ((hljs as unknown) as jest.Mock).mockClear())
+beforeEach(() => (hljs as unknown as jest.Mock).mockClear())
 
 test('basic', createFixtureTest('basic'))
 test('nested', createFixtureTest('nested'))
@@ -63,7 +63,7 @@ function createFixtureTest(name: string) {
     const source = await readFile(path.join(fixtures, `${name}.html`), 'utf8')
     const [expected, { html: actual }] = await Promise.all([
       readFile(path.join(fixtures, `${name}.expected.html`), 'utf8'),
-      posthtml([plugin()]).process(source)
+      posthtml([plugin()]).process(source),
     ])
 
     expect(actual).toBe(expected)
