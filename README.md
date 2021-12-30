@@ -3,6 +3,7 @@
 [![Version][npm-version-shield]][npm]
 [![License][wtfpl-shield]][wtfpl]
 [![TypeScript][typescript-shield]][typescript]
+[![Build Status][build-status-shield]][build-status]
 [![Coverage][codecov-shield]][codecov]
 [![Downloads][npm-stats-shield]][npm-stats]
 [![Chat][gitter-shield]][gitter]
@@ -96,6 +97,8 @@ Add the `nohighlight` class as per [highlight.js's usage docs][]
 [npm-stats-shield]: https://img.shields.io/npm/dt/posthtml-highlight.svg?maxAge=2592000
 [typescript]: https://www.typescriptlang.org/
 [typescript-shield]: https://img.shields.io/badge/definitions-TypeScript-blue.svg
+[build-status]: https://github.com/posthtml/posthtml-highlight/actions/workflows/nodejs.yml
+[build-status-badge]: https://github.com/posthtml/posthtml-highlight/actions/workflows/nodejs.yml/badge.svg
 [codecov]: https://codecov.io/gh/posthtml/posthtml-highlight
 [codecov-shield]: https://img.shields.io/codecov/c/github/posthtml/posthtml-highlight.svg
 [gitter]: https://gitter.im/posthtml/posthtml
