@@ -4,7 +4,6 @@
 [![License][wtfpl-shield]][wtfpl]
 [![TypeScript][typescript-shield]][typescript]
 [![Coverage][codecov-shield]][codecov]
-[![Dependency Status][david-dm-shield]][david-dm]
 [![Downloads][npm-stats-shield]][npm-stats]
 [![Chat][gitter-shield]][gitter]
 
@@ -95,8 +94,6 @@ Add the `nohighlight` class as per [highlight.js's usage docs][]
 [npm-version-shield]: https://img.shields.io/npm/v/posthtml-highlight.svg
 [npm-stats]: http://npm-stat.com/charts.html?package=posthtml-highlight&author=&from=&to=
 [npm-stats-shield]: https://img.shields.io/npm/dt/posthtml-highlight.svg?maxAge=2592000
-[david-dm]: https://david-dm.org/posthtml/posthtml-highlight
-[david-dm-shield]: https://david-dm.org/posthtml/posthtml-highlight.svg
 [typescript]: https://www.typescriptlang.org/
 [typescript-shield]: https://img.shields.io/badge/definitions-TypeScript-blue.svg
 [codecov]: https://codecov.io/gh/posthtml/posthtml-highlight
