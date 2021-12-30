@@ -3,7 +3,6 @@
 [![Version][npm-version-shield]][npm]
 [![License][wtfpl-shield]][wtfpl]
 [![TypeScript][typescript-shield]][typescript]
-[![Build][travis-ci-shield]][travis-ci]
 [![Coverage][codecov-shield]][codecov]
 [![Dependency Status][david-dm-shield]][david-dm]
 [![Downloads][npm-stats-shield]][npm-stats]
@@ -65,9 +64,9 @@ posthtml([
       /**
        * You may also pass any highlight.js options (http://highlightjs.readthedocs.io/en/latest/api.html#configure-options)
        */
-      useBR: true
+      useBR: true,
     }
-  )
+  ),
 ])
   .process(source)
   .then((result) => fs.writeFileSync('./after.html', result.html))
@@ -100,8 +99,6 @@ Add the `nohighlight` class as per [highlight.js's usage docs][]
 [david-dm-shield]: https://david-dm.org/posthtml/posthtml-highlight.svg
 [typescript]: https://www.typescriptlang.org/
 [typescript-shield]: https://img.shields.io/badge/definitions-TypeScript-blue.svg
-[travis-ci]: https://travis-ci.org/posthtml/posthtml-highlight/
-[travis-ci-shield]: https://img.shields.io/travis/posthtml/posthtml-highlight/master.svg
 [codecov]: https://codecov.io/gh/posthtml/posthtml-highlight
 [codecov-shield]: https://img.shields.io/codecov/c/github/posthtml/posthtml-highlight.svg
 [gitter]: https://gitter.im/posthtml/posthtml
