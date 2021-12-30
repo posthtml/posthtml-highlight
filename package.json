@@ -8,7 +8,7 @@
   "homepage": "https://github.com/posthtml/posthtml-highlight",
   "repository": "posthtml/posthtml-highlight",
   "engines": {
-    "node": ">=10"
+    "node": ">=12"
   },
   "scripts": {
     "build": "tsc",
