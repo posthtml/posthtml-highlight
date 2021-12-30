@@ -91,7 +91,7 @@
     "singleQuote": true
   },
   "dependencies": {
-    "highlight.js": "^10.0.0"
+    "highlight.js": "^11.3.1"
   },
   "peerDependencies": {
     "posthtml": "^0.15.1"

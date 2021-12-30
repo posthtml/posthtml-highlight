@@ -1,4 +1,4 @@
-import * as hljs from 'highlight.js'
+import hljs, { HLJSOptions } from 'highlight.js'
 import { Node } from 'posthtml'
 
 export type Options = Partial<HLJSOptions> & {
@@ -46,7 +46,7 @@ function mapContentOrNode(
 ): string | Node {
   if (typeof contentOrNode === 'string') {
     if (lang) {
-      return hljs.highlight(lang, contentOrNode).value
+      return hljs.highlight(contentOrNode, { language: lang }).value
     } else {
       return hljs.highlightAuto(contentOrNode).value
     }

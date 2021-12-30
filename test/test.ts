@@ -2,7 +2,7 @@ import * as fs from 'fs'
 import * as path from 'path'
 import { promisify } from 'util'
 
-import * as hljs from 'highlight.js'
+import hljs from 'highlight.js'
 
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
@@ -25,7 +25,7 @@ test('appends hljs to existing class list', createFixtureTest('existingClass'))
 
 test('configures highlight.js with supplied configuration', async () => {
   const source = '<pre><code>// ambiguous</code></pre>'
-  const config = { useBR: true }
+  const config = { languages: ['javascript', 'typescript'] }
 
   await posthtml([plugin(config)]).process(source)
 
@@ -47,7 +47,9 @@ test('uses with language specified via language-*', async () => {
 
   await posthtml([plugin()]).process(source)
 
-  expect(hljs.highlight).lastCalledWith('javascript', '// ambiguous')
+  expect(hljs.highlight).lastCalledWith('// ambiguous', {
+    language: 'javascript',
+  })
 })
 
 test('uses with language specified via lang-*', async () => {
@@ -55,7 +57,9 @@ test('uses with language specified via lang-*', async () => {
 
   await posthtml([plugin()]).process(source)
 
-  expect(hljs.highlight).lastCalledWith('typescript', '// ambiguous')
+  expect(hljs.highlight).lastCalledWith('// ambiguous', {
+    language: 'typescript',
+  })
 })
 
 function createFixtureTest(name: string) {
